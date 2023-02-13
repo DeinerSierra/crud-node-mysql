@@ -1,4 +1,4 @@
-import mysql from "mysql2";
+import mysql from "mysql2/promise";
 import { database } from "./config.js";
 
 export const createPool = mysql.createPool(database);
